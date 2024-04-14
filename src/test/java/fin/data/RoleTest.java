@@ -23,4 +23,3 @@ public class RoleTest {
         assertEquals(roleNameUser, roleUser.getName());
     }
 }
-

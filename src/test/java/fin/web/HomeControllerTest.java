@@ -12,10 +12,8 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 @SpringBootTest
 @AutoConfigureMockMvc
 public class HomeControllerTest {
-
     @Autowired
     private MockMvc mockMvc;
-
     @Test
     @WithMockUser
     public void homePage() throws Exception {
@@ -25,8 +23,3 @@ public class HomeControllerTest {
                 .andExpect(MockMvcResultMatchers.content().string(org.hamcrest.Matchers.containsString("Добро пожаловать")));
     }
 }
-
-
-
-
-
